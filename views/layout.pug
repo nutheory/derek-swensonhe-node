@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+    script(src="/javascripts/default.js")
+  body
+    .container  
+      header
+        a(href="/")
+          img(src="/images/logo.png")            
+        .credit
+          h3= "Derek Rush"
+          p= "11/18/16"
+          a(href="http://nutheory.com", target="_blank") nutheory.com
+        select(id="search_by_type")
+          option(value="base") Base Models
+          option(value="premium") Premium Models
+          option(value="deluxe") Deluxe Models
+      block content

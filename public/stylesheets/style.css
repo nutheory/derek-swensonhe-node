@@ -1,0 +1,90 @@
+body {
+  font-size: 1.0em;
+  font-weight: 400;
+  font-family: 'IowanOldStyle-Roman';
+  color: #535454;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+  margin:2% 8%;
+  position: relative;
+}
+
+#search_by_type{
+  position: absolute;
+  right: 0;
+  top:100px;
+}
+
+.machine_list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.coffee_machine{
+  border:1px solid #999;
+  width: 32%;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.coffee_machine:hover{
+  cursor: pointer;
+  background: #a3c1df;
+}
+
+.coffee_machine h3{
+  text-align: center;
+}
+
+.coffee_machine p{
+  text-align: center;
+}
+
+.coffee_machine ul{
+  display: block;
+  float:left;
+  width: 45%;
+  padding-left: 10px;
+}
+
+.coffee_machine ul li{
+  list-style: none;
+  padding-left: 0
+}
+
+.pod_list_right{
+  float: right;
+  width:60%;
+}
+
+.coffee_pod{
+  border:1px solid #999;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.coffee_pod h3, .coffee_pod p, .coffee_pod ul{
+  width: 30%;
+  float:left;
+  padding: 8px;
+}
+
+.credit{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.credit h3, .credit p{
+  padding: 0;
+  margin: 0;
+}
